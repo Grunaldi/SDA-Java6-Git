@@ -14,7 +14,7 @@ public class Calculator {
     }
 
     public float divide(float a, float b) {
-      if (b == 0f) {
+        if (b == 0f) {
             throw new IllegalArgumentException("Division by 0!");
         }
         return a / b;
@@ -26,5 +26,13 @@ public class Calculator {
             result *= a;
         }
         return result;
+    }
+
+    public int sum(int a, int... rest) {
+        int sum = a;
+        for (int b : rest) {
+            sum += b;
+        }
+        return sum;
     }
 }
