@@ -1,6 +1,6 @@
 package Snela.com.sda.git.task1;
 
-public class Calculator {
+public class SimpleCalculator {
     public float add(float a, float b) {
         return a + b;
     }
@@ -26,5 +26,19 @@ public class Calculator {
             result *= a;
         }
         return result;
+    }
+
+    public int sum(int a, int... rest) {
+        int sum = a;
+        for (int b : rest) {
+            sum += b;
+        }
+        return sum;
+    }
+    public double squareRoot(double a) {
+        return Math.sqrt(a);
+    }
+    public double cubeRoot(double a) {
+        return Math.cbrt(a);
     }
 }
