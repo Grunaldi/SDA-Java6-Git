@@ -1,16 +1,22 @@
 package Snela.com.sda.git.task1;
 
 public class Calculator {
-        public float plus(float a, float b) {
-            return a + b;
+    public float plus(float a, float b) {
+        return a + b;
+    }
+
+    public float minus(float a, float b) {
+        return a - b;
+    }
+
+    public float times(float a, float b) {
+        return a * b;
+    }
+
+    public float by(float a, float b) {
+        if (b == 0f) {
+            throw new IllegalArgumentException("Division by 0!");
         }
-        public float minus(float a, float b) {
-            return a - b;
-        }
-        public float times(float a, float b) {
-            return a * b;
-        }
-        public float by(float a, float b) {
-            return a / b;
-        }
+        return a / b;
+    }
 }
