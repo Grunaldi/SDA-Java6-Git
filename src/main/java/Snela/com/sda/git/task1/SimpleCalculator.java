@@ -1,6 +1,6 @@
 package Snela.com.sda.git.task1;
 
-public class Calculator {
+public class SimpleCalculator {
     public float add(float a, float b) {
         return a + b;
     }
