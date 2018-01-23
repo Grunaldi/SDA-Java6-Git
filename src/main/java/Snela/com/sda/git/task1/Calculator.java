@@ -14,7 +14,7 @@ public class Calculator {
     }
 
     public float divide(float a, float b) {
-        if (b == 0f) {
+      if (b == 0f) {
             throw new IllegalArgumentException("Division by 0!");
         }
         return a / b;
@@ -34,5 +34,11 @@ public class Calculator {
             sum += b;
         }
         return sum;
+    }
+    public double squareRoot(double a) {
+        return Math.sqrt(a);
+    }
+    public double cubeRoot(double a) {
+        return Math.cbrt(a);
     }
 }
